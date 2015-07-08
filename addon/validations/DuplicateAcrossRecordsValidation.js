@@ -29,7 +29,7 @@ export default EmptyValidation.extend({
     var invalid = false, negate = this.get("negate"),
         arr = record.get(this.get("duplicateCheckPath")),
         values = arr && arr.filterBy(this.get("duplicateCheckKey"), value);
-    invalid = (values && values.get("length") > 1) || (values.get("length") === 1 && values[0] !== record);
+    invalid = values && (values.get("length") > 1 || (values.get("length") === 1 && values[0] !== record));
     invalid = (negate && !invalid) || (!negate && invalid);
     return [invalid, this.get("invalidMessage")];
   },

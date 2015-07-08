@@ -1,0 +1,14 @@
+{
+  "name": "ember-column-data",
+  "description": "Ember addon for Column Data for a record type.",
+  "version": "1.0.1",
+  "options": {
+    "paths": [
+      "addon"
+    ],
+    "exclude": "vendor",
+    "outdir": "docs",
+    "themedir": "node_modules/yuidoc-bootstrap-theme",
+    "helpers": ["node_modules/yuidoc-bootstrap-theme/helpers/helpers.js"]
+  }
+}

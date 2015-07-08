@@ -54,7 +54,7 @@ export default Ember.Mixin.create({
       existing.get("views").pushObject(colView);
     }
     else {
-      listenToMap[listenColName].pushObject(Ember.Object.create({views : [colView], name : colName}));
+      listenToMap[listenColName].pushObject(Ember.Object.create({views : Ember.A([colView]), name : colName}));
     }
   },
 

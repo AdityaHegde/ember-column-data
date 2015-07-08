@@ -1,6 +1,6 @@
-# Ember-column-data
+# ember-column-data
 
-This README outlines the details of collaborating on this Ember addon.
+Docs : http://adityahegde.github.io/ember-column-data/
 
 ## Installation
 
