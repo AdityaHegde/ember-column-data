@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>EmberColumnData.ColumnDataValidation - ember-column-data</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+	    <img alt="ember-column-data" src="../assets/css/logo.png" style="max-height: 65%;" title="ember-column-data">
+            ember-column-data
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1.0.1.1ce14913</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/EmberColumnData.ColumnData", "classes/EmberColumnData.ColumnDataChangeCollectorMixin", "classes/EmberColumnData.ColumnDataGroup", "classes/EmberColumnData.ColumnDataValidation", "classes/EmberColumnData.ColumnDataValueMixin", "classes/EmberColumnData.ColumnListenerEntry", "classes/EmberColumnData.CSVDuplicateValidation", "classes/EmberColumnData.CSVRegexValidation", "classes/EmberColumnData.DuplicateAcrossRecordsValidation", "classes/EmberColumnData.EmptyValidation", "classes/EmberColumnData.NumberRangeValidation", "classes/EmberColumnData.RegexValidation", "modules/column-data", "modules/ember-column-data", "modules/ember-column-data-validation"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+	        <h3>APIs</h3>
+	        <div id="sidebar">
+	            <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+	                <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+	                <li><a href="#modules" data-toggle="tab">Modules</a></li>
+	            </ul>
+	    
+	            <div id="api-tabview-filter">
+	                <input type="search" placeholder="Type to filter APIs">
+	            </div>
+	    
+	            <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+	                <div class="tab-pane active" id="classes">
+	                    <ul id="api-classes" class="nav nav-list">
+	                            <li><a href="../classes/EmberColumnData.ColumnData.html">EmberColumnData.ColumnData</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnDataChangeCollectorMixin.html">EmberColumnData.ColumnDataChangeCollectorMixin</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnDataGroup.html">EmberColumnData.ColumnDataGroup</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnDataValidation.html">EmberColumnData.ColumnDataValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnDataValueMixin.html">EmberColumnData.ColumnDataValueMixin</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnListenerEntry.html">EmberColumnData.ColumnListenerEntry</a></li>
+	                            <li><a href="../classes/EmberColumnData.CSVDuplicateValidation.html">EmberColumnData.CSVDuplicateValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.CSVRegexValidation.html">EmberColumnData.CSVRegexValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.DuplicateAcrossRecordsValidation.html">EmberColumnData.DuplicateAcrossRecordsValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.EmptyValidation.html">EmberColumnData.EmptyValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.NumberRangeValidation.html">EmberColumnData.NumberRangeValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.RegexValidation.html">EmberColumnData.RegexValidation</a></li>
+	                    </ul>
+	                </div>
+	    
+	                <div class="tab-pane" id="modules">
+	                    <ul id="api-modules" class="nav nav-list">
+	                            <li><a href="../modules/column-data.html">column-data</a></li>
+	                            <li><a href="../modules/ember-column-data.html">ember-column-data</a></li>
+	                            <li><a href="../modules/ember-column-data-validation.html">ember-column-data-validation</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+                    Show:
+                    <label for="api-show-inherited" class="checkbox">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected" class="checkbox">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private" class="checkbox">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated" class="checkbox">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </form>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+                            <h1>EmberColumnData.ColumnDataValidation <small>Class</small></h1>
+                        </div>
+                        
+                        <div class="well well-small">
+                        
+                        
+                                <div class="foundat">
+                                    Defined in: <a href="../files/addon_validations_ColumnDataValidation.js.html#l19"><code>addon&#x2F;validations&#x2F;ColumnDataValidation.js:19</code></a>
+                                </div>
+                        
+                                    Module: <a href="../modules/ember-column-data-validation.html">ember-column-data-validation</a><br>
+                                    Parent Module: <a href="../modules/ember-column-data.html">ember-column-data</a>
+                        
+                        </div>
+                        
+                        
+                        <div class="well well-small">
+                            <p>Validation class that goes as 'validation' on column data.</p>
+                        
+                        </div>
+                        
+                        
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#index">Index</a></li>
+                        
+                                    <li><a data-toggle="tab" href="#methods">Methods</a></li>
+                                    <li><a data-toggle="tab" href="#properties">Properties</a></li>
+                            </ul>
+                        
+                            <div class="tab-content">
+                                <div id="index" class="tab-pane active">
+                                    <h2 class="off-left">Item Index</h2>
+                        
+                                        <div class="index-section methods">
+                                            <h3>Methods</h3>
+                        
+                                            <ul class="index-list methods">
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_validateValue" data-tablink="validateValue">validateValue</a>
+                        
+                                                    </li>
+                                            </ul>
+                                        </div>
+                        
+                                        <div class="index-section properties">
+                                            <h3>Properties</h3>
+                        
+                                            <ul class="index-list properties">
+                                                    <li class="index-item property">
+                                                        <a href="#" data-tabid="#properties" data-anchor="#property_ColumnDataValidationsMap" data-tablink="ColumnDataValidationsMap">ColumnDataValidationsMap</a>
+                        
+                                                            <span class="flag static">static</span>
+                                                    </li>
+                                                    <li class="index-item property">
+                                                        <a href="#" data-tabid="#properties" data-anchor="#property_mandatory" data-tablink="mandatory">mandatory</a>
+                        
+                                                    </li>
+                                                    <li class="index-item property private">
+                                                        <a href="#" data-tabid="#properties" data-anchor="#property_validate" data-tablink="validate">validate</a>
+                        
+                                                    </li>
+                                                    <li class="index-item property">
+                                                        <a href="#" data-tabid="#properties" data-anchor="#property_validations" data-tablink="validations">validations</a>
+                        
+                                                    </li>
+                                            </ul>
+                                        </div>
+                        
+                        
+                                </div>
+                        
+                                    <div id="methods" class="tab-pane">
+                                        <h2 class="off-left">Methods</h2>
+                        
+                                            <div id="method_validateValue" class="method item">
+                                                <h3 class="name"><code>validateValue</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code>value</code>
+                                                            </li>
+                                                            <li class="arg">
+                                                                    <code>record</code>
+                                                            </li>
+                                                            <li class="arg">
+                                                                    <code class="optional">[validations]</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                                    <span class="returns-inline">
+                                                        <span class="type">Array</span>
+                                                    </span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_validations_ColumnDataValidation.js.html#l47"><code>addon&#x2F;validations&#x2F;ColumnDataValidation.js:47</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Method to validate a value on record.</p>
+                                            
+                                                </div>
+                                            
+                                                    <div class="params">
+                                                        <h4>Parameters:</h4>
+                                            
+                                                        <ul class="params-list">
+                                                            <li class="param">
+                                                                    <code class="param-name">value</code>
+                                                                    <span class="type">Any</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>Value to validate.</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                            <li class="param">
+                                                                    <code class="param-name">record</code>
+                                                                    <span class="type">Class</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>Record to validate on.</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                            <li class="param">
+                                                                    <code class="param-name optional">[validations]</code>
+                                                                    <span class="type">Array</span>
+                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>Optional override of the validations to run.</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            
+                                                    <div class="returns">
+                                                        <h4>Returns:</h4>
+                                            
+                                                        <div class="returns-description">
+                                                                    <span class="type">Array</span>:
+                                                                <p>Returns an array with 1st element as a boolean which says whether validations passed or not, 2nd element is the invalid message if it failed.</p>
+                                            
+                                                        </div>
+                                                    </div>
+                                            
+                                            </div>
+                                    </div>
+                        
+                                    <div id="properties" class="tab-pane">
+                                        <h2 class="off-left">Properties</h2>
+                        
+                                            <div id="property_ColumnDataValidationsMap" class="property item">
+                                                <h3 class="name"><code>ColumnDataValidationsMap</code></h3>
+                                                <span class="type">Unknown</span>
+                                            
+                                            
+                                            
+                                            
+                                                    <span class="flag static">static</span>
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_validations_ColumnDataValidation.js.html#l90"><code>addon&#x2F;validations&#x2F;ColumnDataValidation.js:90</code></a>
+                                                    </p>
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Column Data Validation Types Map.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="property_mandatory" class="property item">
+                                                <h3 class="name"><code>mandatory</code></h3>
+                                                <span class="type">Boolean</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_validations_ColumnDataValidation.js.html#l81"><code>addon&#x2F;validations&#x2F;ColumnDataValidation.js:81</code></a>
+                                                    </p>
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Boolean to denote whether the property is mandatory or not.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="property_validate" class="property item private">
+                                                <h3 class="name"><code>validate</code></h3>
+                                                <span class="type">Boolean</span>
+                                            
+                                            
+                                                    <span class="flag private">private</span>
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_validations_ColumnDataValidation.js.html#l40"><code>addon&#x2F;validations&#x2F;ColumnDataValidation.js:40</code></a>
+                                                    </p>
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="property_validations" class="property item">
+                                                <h3 class="name"><code>validations</code></h3>
+                                                <span class="type">Array</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_validations_ColumnDataValidation.js.html#l32"><code>addon&#x2F;validations&#x2F;ColumnDataValidation.js:32</code></a>
+                                                    </p>
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Array of validations to run. Passed as objects while creating.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                    </div>
+                        
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

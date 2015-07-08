@@ -1,0 +1,845 @@
+{
+    "project": {
+        "name": "ember-column-data",
+        "description": "Ember addon for Column Data for a record type.",
+        "version": "1.0.1.1ce14913"
+    },
+    "files": {
+        "addon/validations/CSVDuplicateValidation.js": {
+            "name": "addon/validations/CSVDuplicateValidation.js",
+            "modules": {},
+            "classes": {
+                "EmberColumnData.CSVDuplicateValidation": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "addon/validations/CSVRegexValidation.js": {
+            "name": "addon/validations/CSVRegexValidation.js",
+            "modules": {},
+            "classes": {
+                "EmberColumnData.CSVRegexValidation": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "addon/validations/ColumnDataValidation.js": {
+            "name": "addon/validations/ColumnDataValidation.js",
+            "modules": {},
+            "classes": {
+                "EmberColumnData.ColumnDataValidation": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "addon/validations/DuplicateAcrossRecordsValidation.js": {
+            "name": "addon/validations/DuplicateAcrossRecordsValidation.js",
+            "modules": {},
+            "classes": {
+                "EmberColumnData.DuplicateAcrossRecordsValidation": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "addon/validations/EmptyValidation.js": {
+            "name": "addon/validations/EmptyValidation.js",
+            "modules": {},
+            "classes": {
+                "EmberColumnData.EmptyValidation": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "addon/validations/NumberRangeValidation.js": {
+            "name": "addon/validations/NumberRangeValidation.js",
+            "modules": {},
+            "classes": {
+                "EmberColumnData.NumberRangeValidation": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "addon/validations/RegexValidation.js": {
+            "name": "addon/validations/RegexValidation.js",
+            "modules": {},
+            "classes": {
+                "EmberColumnData.RegexValidation": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "addon/ColumnData.js": {
+            "name": "addon/ColumnData.js",
+            "modules": {},
+            "classes": {
+                "EmberColumnData.ColumnData": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "addon/ColumnDataChangeCollectorMixin.js": {
+            "name": "addon/ColumnDataChangeCollectorMixin.js",
+            "modules": {
+                "ember-column-data": 1
+            },
+            "classes": {
+                "EmberColumnData.ColumnDataChangeCollectorMixin": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "addon/ColumnDataGroup.js": {
+            "name": "addon/ColumnDataGroup.js",
+            "modules": {},
+            "classes": {
+                "EmberColumnData.ColumnDataGroup": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "addon/ColumnDataValueMixin.js": {
+            "name": "addon/ColumnDataValueMixin.js",
+            "modules": {},
+            "classes": {
+                "EmberColumnData.ColumnDataValueMixin": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "addon/ColumnListenerEntry.js": {
+            "name": "addon/ColumnListenerEntry.js",
+            "modules": {},
+            "classes": {
+                "EmberColumnData.ColumnListenerEntry": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "addon/index.js": {
+            "name": "addon/index.js",
+            "modules": {
+                "column-data": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "ember-column-data": {
+            "name": "ember-column-data",
+            "submodules": {
+                "ember-column-data-validation": 1
+            },
+            "classes": {
+                "EmberColumnData.CSVDuplicateValidation": 1,
+                "EmberColumnData.CSVRegexValidation": 1,
+                "EmberColumnData.ColumnDataValidation": 1,
+                "EmberColumnData.DuplicateAcrossRecordsValidation": 1,
+                "EmberColumnData.EmptyValidation": 1,
+                "EmberColumnData.NumberRangeValidation": 1,
+                "EmberColumnData.RegexValidation": 1,
+                "EmberColumnData.ColumnData": 1,
+                "EmberColumnData.ColumnDataChangeCollectorMixin": 1,
+                "EmberColumnData.ColumnDataGroup": 1,
+                "EmberColumnData.ColumnDataValueMixin": 1,
+                "EmberColumnData.ColumnListenerEntry": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "addon/ColumnListenerEntry.js",
+            "line": 3,
+            "description": "A mixin that is a parent of ColumnDataValueMixin that collects value changes and fires listeners on the column."
+        },
+        "ember-column-data-validation": {
+            "name": "ember-column-data-validation",
+            "submodules": {},
+            "classes": {
+                "EmberColumnData.CSVDuplicateValidation": 1,
+                "EmberColumnData.CSVRegexValidation": 1,
+                "EmberColumnData.ColumnDataValidation": 1,
+                "EmberColumnData.DuplicateAcrossRecordsValidation": 1,
+                "EmberColumnData.EmptyValidation": 1,
+                "EmberColumnData.NumberRangeValidation": 1,
+                "EmberColumnData.RegexValidation": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "ember-column-data",
+            "namespace": "",
+            "description": "Validate duplication in a CSV. Pass type = 3 to get this.",
+            "file": "addon/validations/RegexValidation.js",
+            "line": 4
+        },
+        "column-data": {
+            "name": "column-data",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "addon/index.js",
+            "line": 1,
+            "description": "Module for meta data of a record type and its properties."
+        }
+    },
+    "classes": {
+        "EmberColumnData.CSVDuplicateValidation": {
+            "name": "EmberColumnData.CSVDuplicateValidation",
+            "shortname": "EmberColumnData.CSVDuplicateValidation",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ember-column-data",
+            "file": "addon/validations/CSVDuplicateValidation.js",
+            "line": 4,
+            "description": "Validate duplication in a CSV. Pass type = 3 to get this.",
+            "submodule": "ember-column-data-validation",
+            "extends": "EmberColumnData.CSVRegexValidation"
+        },
+        "EmberColumnData.CSVRegexValidation": {
+            "name": "EmberColumnData.CSVRegexValidation",
+            "shortname": "EmberColumnData.CSVRegexValidation",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ember-column-data",
+            "namespace": "",
+            "file": "addon/validations/CSVRegexValidation.js",
+            "line": 4,
+            "description": "Validate on a regex on each value in a Comma Seperated Value. Pass type = 2 to get this.",
+            "submodule": "ember-column-data-validation",
+            "extends": "EmberColumnData.RegexValidation"
+        },
+        "EmberColumnData.ColumnDataValidation": {
+            "name": "EmberColumnData.ColumnDataValidation",
+            "shortname": "EmberColumnData.ColumnDataValidation",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ember-column-data",
+            "namespace": "",
+            "file": "addon/validations/ColumnDataValidation.js",
+            "line": 19,
+            "description": "Validation class that goes as 'validation' on column data.",
+            "submodule": "ember-column-data-validation"
+        },
+        "EmberColumnData.DuplicateAcrossRecordsValidation": {
+            "name": "EmberColumnData.DuplicateAcrossRecordsValidation",
+            "shortname": "EmberColumnData.DuplicateAcrossRecordsValidation",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ember-column-data",
+            "namespace": "",
+            "file": "addon/validations/DuplicateAcrossRecordsValidation.js",
+            "line": 3,
+            "description": "Validate duplication across siblings of the record. Pass type = 4 to get this.",
+            "submodule": "ember-column-data-validation",
+            "extends": "EmberColumnData.EmptyValidation"
+        },
+        "EmberColumnData.EmptyValidation": {
+            "name": "EmberColumnData.EmptyValidation",
+            "shortname": "EmberColumnData.EmptyValidation",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ember-column-data",
+            "namespace": "",
+            "file": "addon/validations/EmptyValidation.js",
+            "line": 3,
+            "description": "Not empty validation class. Pass type = 0 to get this.",
+            "submodule": "ember-column-data-validation"
+        },
+        "EmberColumnData.NumberRangeValidation": {
+            "name": "EmberColumnData.NumberRangeValidation",
+            "shortname": "EmberColumnData.NumberRangeValidation",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ember-column-data",
+            "namespace": "",
+            "file": "addon/validations/NumberRangeValidation.js",
+            "line": 4,
+            "description": "Validate number ranges. Pass type = 5 to get this.",
+            "submodule": "ember-column-data-validation",
+            "extends": "EmberColumnData.EmptyValidation"
+        },
+        "EmberColumnData.RegexValidation": {
+            "name": "EmberColumnData.RegexValidation",
+            "shortname": "EmberColumnData.RegexValidation",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ember-column-data",
+            "namespace": "",
+            "file": "addon/validations/RegexValidation.js",
+            "line": 4,
+            "description": "Validate on a regex. Pass type = 1 to get this.",
+            "submodule": "ember-column-data-validation",
+            "extends": "EmberColumnData.EmptyValidation"
+        },
+        "EmberColumnData.ColumnData": {
+            "name": "EmberColumnData.ColumnData",
+            "shortname": "EmberColumnData.ColumnData",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ember-column-data",
+            "namespace": "",
+            "file": "addon/ColumnData.js",
+            "line": 7,
+            "description": "Class for meta data for a property on a record."
+        },
+        "EmberColumnData.ColumnDataChangeCollectorMixin": {
+            "name": "EmberColumnData.ColumnDataChangeCollectorMixin",
+            "shortname": "EmberColumnData.ColumnDataChangeCollectorMixin",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ember-column-data",
+            "namespace": "",
+            "file": "addon/ColumnDataChangeCollectorMixin.js",
+            "line": 3,
+            "description": "A mixin that is a parent of ColumnDataValueMixin that collects value changes and fires listeners on the column."
+        },
+        "EmberColumnData.ColumnDataGroup": {
+            "name": "EmberColumnData.ColumnDataGroup",
+            "shortname": "EmberColumnData.ColumnDataGroup",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ember-column-data",
+            "namespace": "",
+            "file": "addon/ColumnDataGroup.js",
+            "line": 6,
+            "description": "Class with meta data of a record type."
+        },
+        "EmberColumnData.ColumnDataValueMixin": {
+            "name": "EmberColumnData.ColumnDataValueMixin",
+            "shortname": "EmberColumnData.ColumnDataValueMixin",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ember-column-data",
+            "namespace": "",
+            "file": "addon/ColumnDataValueMixin.js",
+            "line": 6,
+            "description": "A mixin that aliases the value of the attribute given by 'columnData' in 'record' to 'value'."
+        },
+        "EmberColumnData.ColumnListenerEntry": {
+            "name": "EmberColumnData.ColumnListenerEntry",
+            "shortname": "EmberColumnData.ColumnListenerEntry",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ember-column-data",
+            "namespace": "",
+            "file": "addon/ColumnListenerEntry.js",
+            "line": 3,
+            "description": "Entry for column listeners."
+        }
+    },
+    "classitems": [
+        {
+            "file": "addon/validations/CSVRegexValidation.js",
+            "line": 13,
+            "description": "Delimeter to use to split values in the CSV.",
+            "itemtype": "property",
+            "name": "delimeter",
+            "type": "String",
+            "class": "EmberColumnData.CSVRegexValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/ColumnDataValidation.js",
+            "line": 32,
+            "description": "Array of validations to run. Passed as objects while creating.",
+            "itemtype": "property",
+            "name": "validations",
+            "type": "Array",
+            "class": "EmberColumnData.ColumnDataValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/ColumnDataValidation.js",
+            "line": 40,
+            "itemtype": "property",
+            "name": "validate",
+            "type": "Boolean",
+            "access": "private",
+            "tagname": "",
+            "class": "EmberColumnData.ColumnDataValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/ColumnDataValidation.js",
+            "line": 47,
+            "description": "Method to validate a value on record.",
+            "itemtype": "method",
+            "name": "validateValue",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "Value to validate.",
+                    "type": "Any"
+                },
+                {
+                    "name": "record",
+                    "description": "Record to validate on.",
+                    "type": "Class"
+                },
+                {
+                    "name": "validations",
+                    "description": "Optional override of the validations to run.",
+                    "type": "Array",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "Returns an array with 1st element as a boolean which says whether validations passed or not, 2nd element is the invalid message if it failed.",
+                "type": "Array"
+            },
+            "class": "EmberColumnData.ColumnDataValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/ColumnDataValidation.js",
+            "line": 81,
+            "description": "Boolean to denote whether the property is mandatory or not.",
+            "itemtype": "property",
+            "name": "mandatory",
+            "type": "Boolean",
+            "class": "EmberColumnData.ColumnDataValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/ColumnDataValidation.js",
+            "line": 90,
+            "description": "Column Data Validation Types Map.",
+            "static": 1,
+            "itemtype": "property",
+            "name": "ColumnDataValidationsMap",
+            "class": "EmberColumnData.ColumnDataValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/DuplicateAcrossRecordsValidation.js",
+            "line": 12,
+            "description": "Path relative to record to check duplication under.",
+            "itemtype": "property",
+            "name": "duplicateCheckPath",
+            "type": "String",
+            "class": "EmberColumnData.DuplicateAcrossRecordsValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/DuplicateAcrossRecordsValidation.js",
+            "line": 20,
+            "description": "Key in the object to check duplicate for.",
+            "itemtype": "property",
+            "name": "duplicateCheckKey",
+            "type": "String",
+            "class": "EmberColumnData.DuplicateAcrossRecordsValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/EmptyValidation.js",
+            "line": 11,
+            "description": "Message to show when the validation fails.",
+            "itemtype": "property",
+            "name": "invalidMessage",
+            "type": "String",
+            "class": "EmberColumnData.EmptyValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/EmptyValidation.js",
+            "line": 19,
+            "description": "Boolean that says whether to negate the result or not.",
+            "itemtype": "property",
+            "name": "negate",
+            "type": "Boolean",
+            "class": "EmberColumnData.EmptyValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/NumberRangeValidation.js",
+            "line": 13,
+            "description": "Min value of a number.",
+            "itemtype": "property",
+            "name": "minValue",
+            "type": "Number",
+            "class": "EmberColumnData.NumberRangeValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/NumberRangeValidation.js",
+            "line": 21,
+            "description": "Max value of a number.",
+            "itemtype": "property",
+            "name": "maxValue",
+            "type": "Number",
+            "class": "EmberColumnData.NumberRangeValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/RegexValidation.js",
+            "line": 13,
+            "description": "Regex to valide with.",
+            "itemtype": "property",
+            "name": "regex",
+            "type": "String",
+            "class": "EmberColumnData.RegexValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/RegexValidation.js",
+            "line": 21,
+            "description": "Regex flags to use while creating the regex object.",
+            "itemtype": "property",
+            "name": "regexFlags",
+            "type": "String",
+            "class": "EmberColumnData.RegexValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/RegexValidation.js",
+            "line": 29,
+            "description": "RegExp object create using regex and regexFlags.",
+            "itemtype": "property",
+            "name": "regexObject",
+            "type": "RegExp",
+            "class": "EmberColumnData.RegexValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/validations/RegexValidation.js",
+            "line": 41,
+            "description": "Method to validate.",
+            "itemtype": "method",
+            "name": "validateValue",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "Value to validate.",
+                    "type": "Any"
+                },
+                {
+                    "name": "record",
+                    "description": "Record to validate on.",
+                    "type": "Class"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "EmberColumnData.RegexValidation",
+            "module": "ember-column-data",
+            "submodule": "ember-column-data-validation"
+        },
+        {
+            "file": "addon/ColumnData.js",
+            "line": 18,
+            "description": "A name to uniquely identify column data.",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "class": "EmberColumnData.ColumnData",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnData.js",
+            "line": 26,
+            "description": "Key name of the attribute in the record. If not provided, 'name' is used a key.",
+            "itemtype": "property",
+            "name": "keyName",
+            "type": "String",
+            "class": "EmberColumnData.ColumnData",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnData.js",
+            "line": 34,
+            "description": "Key of the attribute based on keyName or name if keyName is not provided.",
+            "itemtype": "property",
+            "name": "key",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "EmberColumnData.ColumnData",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnData.js",
+            "line": 47,
+            "description": "Meta data for the validation of the attribute on the record. Passed as an object while creating.",
+            "itemtype": "property",
+            "name": "validation",
+            "type": "Class",
+            "class": "EmberColumnData.ColumnData",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnData.js",
+            "line": 55,
+            "description": "A suitable label for the attribute used in displaying in certain places.",
+            "itemtype": "property",
+            "name": "label",
+            "type": "String",
+            "class": "EmberColumnData.ColumnData",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnData.js",
+            "line": 63,
+            "description": "A nested child column data.",
+            "itemtype": "property",
+            "name": "childCol",
+            "type": "Class",
+            "access": "private",
+            "tagname": "",
+            "class": "EmberColumnData.ColumnData",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnData.js",
+            "line": 72,
+            "description": "A name for the nesting of a column data.",
+            "itemtype": "property",
+            "name": "childColName",
+            "type": "String",
+            "class": "EmberColumnData.ColumnData",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnData.js",
+            "line": 87,
+            "description": "A nested child column data group.",
+            "itemtype": "property",
+            "name": "childColGroup",
+            "type": "Class",
+            "access": "private",
+            "tagname": "",
+            "class": "EmberColumnData.ColumnData",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnData.js",
+            "line": 96,
+            "description": "A name for the nesting of a column data group.",
+            "itemtype": "property",
+            "name": "childColGroupName",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "EmberColumnData.ColumnData",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnDataGroup.js",
+            "line": 18,
+            "description": "A name to uniquely identify the column data group.",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "class": "EmberColumnData.ColumnDataGroup",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnDataGroup.js",
+            "line": 26,
+            "description": "Array of columns. Each element is an object which will be passed to ColumnData.create.",
+            "itemtype": "property",
+            "name": "columns",
+            "type": "Array",
+            "class": "EmberColumnData.ColumnDataGroup",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnDataValueMixin.js",
+            "line": 19,
+            "description": "Column data instance to be used to extract value.",
+            "itemtype": "property",
+            "name": "columnData",
+            "type": "Class",
+            "class": "EmberColumnData.ColumnDataValueMixin",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnDataValueMixin.js",
+            "line": 27,
+            "description": "Record to extract the value from.",
+            "itemtype": "property",
+            "name": "record",
+            "type": "Class",
+            "class": "EmberColumnData.ColumnDataValueMixin",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnDataValueMixin.js",
+            "line": 49,
+            "description": "Callback callled when the column listened on changes.",
+            "itemtype": "method",
+            "name": "listenedColumnChangedHook",
+            "params": [
+                {
+                    "name": "changedColumnData",
+                    "description": "ColumnData instance of the changed column.",
+                    "type": "ColumnData"
+                },
+                {
+                    "name": "changedValue",
+                    "description": "",
+                    "type": "Any"
+                },
+                {
+                    "name": "oldValue",
+                    "description": "",
+                    "type": "Any"
+                }
+            ],
+            "class": "EmberColumnData.ColumnDataValueMixin",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnDataValueMixin.js",
+            "line": 81,
+            "description": "An alias to the value in attribute. It undergoes validations and the change will be bubbled.",
+            "itemtype": "property",
+            "name": "value",
+            "class": "EmberColumnData.ColumnDataValueMixin",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnDataValueMixin.js",
+            "line": 127,
+            "description": "Callback called when the value changes.",
+            "itemtype": "method",
+            "name": "valueChangeHook",
+            "params": [
+                {
+                    "name": "val",
+                    "description": "",
+                    "type": "Any"
+                }
+            ],
+            "class": "EmberColumnData.ColumnDataValueMixin",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnDataValueMixin.js",
+            "line": 154,
+            "description": "Callback called when record changes.",
+            "itemtype": "method",
+            "name": "recordChangeHook",
+            "class": "EmberColumnData.ColumnDataValueMixin",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnDataValueMixin.js",
+            "line": 162,
+            "description": "Callback called when record is removed (set to null).",
+            "itemtype": "method",
+            "name": "recordRemovedHook",
+            "class": "EmberColumnData.ColumnDataValueMixin",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnDataValueMixin.js",
+            "line": 197,
+            "description": "Parent object with mixin EmberColumnData.ColumnDataChangeCollectorMixin to bubble to.",
+            "itemtype": "property",
+            "name": "parentForBubbling",
+            "type": "Instance",
+            "class": "EmberColumnData.ColumnDataValueMixin",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnListenerEntry.js",
+            "line": 9,
+            "description": "A name to uniquely identify column data.",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "class": "EmberColumnData.ColumnListenerEntry",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnListenerEntry.js",
+            "line": 17,
+            "description": "Key name of the attribute in the record. If not provided, 'name' is used a key.",
+            "itemtype": "property",
+            "name": "keyName",
+            "type": "String",
+            "class": "EmberColumnData.ColumnListenerEntry",
+            "module": "ember-column-data"
+        },
+        {
+            "file": "addon/ColumnListenerEntry.js",
+            "line": 25,
+            "description": "Key of the attribute based on keyName or name if keyName is not provided.",
+            "itemtype": "property",
+            "name": "key",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "EmberColumnData.ColumnListenerEntry",
+            "module": "ember-column-data"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " addon/validations/ColumnDataValidation.js:47"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " addon/validations/RegexValidation.js:41"
+        }
+    ]
+}

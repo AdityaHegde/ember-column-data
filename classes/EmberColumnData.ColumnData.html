@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>EmberColumnData.ColumnData - ember-column-data</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+	    <img alt="ember-column-data" src="../assets/css/logo.png" style="max-height: 65%;" title="ember-column-data">
+            ember-column-data
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1.0.1.1ce14913</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/EmberColumnData.ColumnData", "classes/EmberColumnData.ColumnDataChangeCollectorMixin", "classes/EmberColumnData.ColumnDataGroup", "classes/EmberColumnData.ColumnDataValidation", "classes/EmberColumnData.ColumnDataValueMixin", "classes/EmberColumnData.ColumnListenerEntry", "classes/EmberColumnData.CSVDuplicateValidation", "classes/EmberColumnData.CSVRegexValidation", "classes/EmberColumnData.DuplicateAcrossRecordsValidation", "classes/EmberColumnData.EmptyValidation", "classes/EmberColumnData.NumberRangeValidation", "classes/EmberColumnData.RegexValidation", "modules/column-data", "modules/ember-column-data", "modules/ember-column-data-validation"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+	        <h3>APIs</h3>
+	        <div id="sidebar">
+	            <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+	                <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+	                <li><a href="#modules" data-toggle="tab">Modules</a></li>
+	            </ul>
+	    
+	            <div id="api-tabview-filter">
+	                <input type="search" placeholder="Type to filter APIs">
+	            </div>
+	    
+	            <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+	                <div class="tab-pane active" id="classes">
+	                    <ul id="api-classes" class="nav nav-list">
+	                            <li><a href="../classes/EmberColumnData.ColumnData.html">EmberColumnData.ColumnData</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnDataChangeCollectorMixin.html">EmberColumnData.ColumnDataChangeCollectorMixin</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnDataGroup.html">EmberColumnData.ColumnDataGroup</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnDataValidation.html">EmberColumnData.ColumnDataValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnDataValueMixin.html">EmberColumnData.ColumnDataValueMixin</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnListenerEntry.html">EmberColumnData.ColumnListenerEntry</a></li>
+	                            <li><a href="../classes/EmberColumnData.CSVDuplicateValidation.html">EmberColumnData.CSVDuplicateValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.CSVRegexValidation.html">EmberColumnData.CSVRegexValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.DuplicateAcrossRecordsValidation.html">EmberColumnData.DuplicateAcrossRecordsValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.EmptyValidation.html">EmberColumnData.EmptyValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.NumberRangeValidation.html">EmberColumnData.NumberRangeValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.RegexValidation.html">EmberColumnData.RegexValidation</a></li>
+	                    </ul>
+	                </div>
+	    
+	                <div class="tab-pane" id="modules">
+	                    <ul id="api-modules" class="nav nav-list">
+	                            <li><a href="../modules/column-data.html">column-data</a></li>
+	                            <li><a href="../modules/ember-column-data.html">ember-column-data</a></li>
+	                            <li><a href="../modules/ember-column-data-validation.html">ember-column-data-validation</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+                    Show:
+                    <label for="api-show-inherited" class="checkbox">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected" class="checkbox">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private" class="checkbox">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated" class="checkbox">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </form>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+                            <h1>EmberColumnData.ColumnData <small>Class</small></h1>
+                        </div>
+                        
+                        <div class="well well-small">
+                        
+                        
+                                <div class="foundat">
+                                    Defined in: <a href="../files/addon_ColumnData.js.html#l7"><code>addon&#x2F;ColumnData.js:7</code></a>
+                                </div>
+                        
+                                    Module: <a href="../modules/ember-column-data.html">ember-column-data</a>
+                        
+                        </div>
+                        
+                        
+                        <div class="well well-small">
+                            <p>Class for meta data for a property on a record.</p>
+                        
+                        </div>
+                        
+                        
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#index">Index</a></li>
+                        
+                                    <li><a data-toggle="tab" href="#properties">Properties</a></li>
+                            </ul>
+                        
+                            <div class="tab-content">
+                                <div id="index" class="tab-pane active">
+                                    <h2 class="off-left">Item Index</h2>
+                        
+                        
+                                        <div class="index-section properties">
+                                            <h3>Properties</h3>
+                        
+                                            <ul class="index-list properties">
+                                                    <li class="index-item property private">
+                                                        <a href="#" data-tabid="#properties" data-anchor="#property_childCol" data-tablink="childCol">childCol</a>
+                        
+                                                    </li>
+                                                    <li class="index-item property private">
+                                                        <a href="#" data-tabid="#properties" data-anchor="#property_childColGroup" data-tablink="childColGroup">childColGroup</a>
+                        
+                                                    </li>
+                                                    <li class="index-item property private">
+                                                        <a href="#" data-tabid="#properties" data-anchor="#property_childColGroupName" data-tablink="childColGroupName">childColGroupName</a>
+                        
+                                                    </li>
+                                                    <li class="index-item property">
+                                                        <a href="#" data-tabid="#properties" data-anchor="#property_childColName" data-tablink="childColName">childColName</a>
+                        
+                                                    </li>
+                                                    <li class="index-item property private">
+                                                        <a href="#" data-tabid="#properties" data-anchor="#property_key" data-tablink="key">key</a>
+                        
+                                                    </li>
+                                                    <li class="index-item property">
+                                                        <a href="#" data-tabid="#properties" data-anchor="#property_keyName" data-tablink="keyName">keyName</a>
+                        
+                                                    </li>
+                                                    <li class="index-item property">
+                                                        <a href="#" data-tabid="#properties" data-anchor="#property_label" data-tablink="label">label</a>
+                        
+                                                    </li>
+                                                    <li class="index-item property">
+                                                        <a href="#" data-tabid="#properties" data-anchor="#property_name" data-tablink="name">name</a>
+                        
+                                                    </li>
+                                                    <li class="index-item property">
+                                                        <a href="#" data-tabid="#properties" data-anchor="#property_validation" data-tablink="validation">validation</a>
+                        
+                                                    </li>
+                                            </ul>
+                                        </div>
+                        
+                        
+                                </div>
+                        
+                        
+                                    <div id="properties" class="tab-pane">
+                                        <h2 class="off-left">Properties</h2>
+                        
+                                            <div id="property_childCol" class="property item private">
+                                                <h3 class="name"><code>childCol</code></h3>
+                                                <span class="type">Class</span>
+                                            
+                                            
+                                                    <span class="flag private">private</span>
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_ColumnData.js.html#l63"><code>addon&#x2F;ColumnData.js:63</code></a>
+                                                    </p>
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>A nested child column data.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="property_childColGroup" class="property item private">
+                                                <h3 class="name"><code>childColGroup</code></h3>
+                                                <span class="type">Class</span>
+                                            
+                                            
+                                                    <span class="flag private">private</span>
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_ColumnData.js.html#l87"><code>addon&#x2F;ColumnData.js:87</code></a>
+                                                    </p>
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>A nested child column data group.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="property_childColGroupName" class="property item private">
+                                                <h3 class="name"><code>childColGroupName</code></h3>
+                                                <span class="type">String</span>
+                                            
+                                            
+                                                    <span class="flag private">private</span>
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_ColumnData.js.html#l96"><code>addon&#x2F;ColumnData.js:96</code></a>
+                                                    </p>
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>A name for the nesting of a column data group.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="property_childColName" class="property item">
+                                                <h3 class="name"><code>childColName</code></h3>
+                                                <span class="type">String</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_ColumnData.js.html#l72"><code>addon&#x2F;ColumnData.js:72</code></a>
+                                                    </p>
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>A name for the nesting of a column data.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="property_key" class="property item private">
+                                                <h3 class="name"><code>key</code></h3>
+                                                <span class="type">String</span>
+                                            
+                                            
+                                                    <span class="flag private">private</span>
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_ColumnData.js.html#l34"><code>addon&#x2F;ColumnData.js:34</code></a>
+                                                    </p>
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Key of the attribute based on keyName or name if keyName is not provided.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="property_keyName" class="property item">
+                                                <h3 class="name"><code>keyName</code></h3>
+                                                <span class="type">String</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_ColumnData.js.html#l26"><code>addon&#x2F;ColumnData.js:26</code></a>
+                                                    </p>
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Key name of the attribute in the record. If not provided, 'name' is used a key.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="property_label" class="property item">
+                                                <h3 class="name"><code>label</code></h3>
+                                                <span class="type">String</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_ColumnData.js.html#l55"><code>addon&#x2F;ColumnData.js:55</code></a>
+                                                    </p>
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>A suitable label for the attribute used in displaying in certain places.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="property_name" class="property item">
+                                                <h3 class="name"><code>name</code></h3>
+                                                <span class="type">String</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_ColumnData.js.html#l18"><code>addon&#x2F;ColumnData.js:18</code></a>
+                                                    </p>
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>A name to uniquely identify column data.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="property_validation" class="property item">
+                                                <h3 class="name"><code>validation</code></h3>
+                                                <span class="type">Class</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/addon_ColumnData.js.html#l47"><code>addon&#x2F;ColumnData.js:47</code></a>
+                                                    </p>
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Meta data for the validation of the attribute on the record. Passed as an object while creating.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                    </div>
+                        
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

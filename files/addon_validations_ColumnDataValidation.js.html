@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>addon/validations/ColumnDataValidation.js - ember-column-data</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+	    <img alt="ember-column-data" src="../assets/css/logo.png" style="max-height: 65%;" title="ember-column-data">
+            ember-column-data
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1.0.1.1ce14913</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/EmberColumnData.ColumnData", "classes/EmberColumnData.ColumnDataChangeCollectorMixin", "classes/EmberColumnData.ColumnDataGroup", "classes/EmberColumnData.ColumnDataValidation", "classes/EmberColumnData.ColumnDataValueMixin", "classes/EmberColumnData.ColumnListenerEntry", "classes/EmberColumnData.CSVDuplicateValidation", "classes/EmberColumnData.CSVRegexValidation", "classes/EmberColumnData.DuplicateAcrossRecordsValidation", "classes/EmberColumnData.EmptyValidation", "classes/EmberColumnData.NumberRangeValidation", "classes/EmberColumnData.RegexValidation", "modules/column-data", "modules/ember-column-data", "modules/ember-column-data-validation"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+	        <h3>APIs</h3>
+	        <div id="sidebar">
+	            <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+	                <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+	                <li><a href="#modules" data-toggle="tab">Modules</a></li>
+	            </ul>
+	    
+	            <div id="api-tabview-filter">
+	                <input type="search" placeholder="Type to filter APIs">
+	            </div>
+	    
+	            <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+	                <div class="tab-pane active" id="classes">
+	                    <ul id="api-classes" class="nav nav-list">
+	                            <li><a href="../classes/EmberColumnData.ColumnData.html">EmberColumnData.ColumnData</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnDataChangeCollectorMixin.html">EmberColumnData.ColumnDataChangeCollectorMixin</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnDataGroup.html">EmberColumnData.ColumnDataGroup</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnDataValidation.html">EmberColumnData.ColumnDataValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnDataValueMixin.html">EmberColumnData.ColumnDataValueMixin</a></li>
+	                            <li><a href="../classes/EmberColumnData.ColumnListenerEntry.html">EmberColumnData.ColumnListenerEntry</a></li>
+	                            <li><a href="../classes/EmberColumnData.CSVDuplicateValidation.html">EmberColumnData.CSVDuplicateValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.CSVRegexValidation.html">EmberColumnData.CSVRegexValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.DuplicateAcrossRecordsValidation.html">EmberColumnData.DuplicateAcrossRecordsValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.EmptyValidation.html">EmberColumnData.EmptyValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.NumberRangeValidation.html">EmberColumnData.NumberRangeValidation</a></li>
+	                            <li><a href="../classes/EmberColumnData.RegexValidation.html">EmberColumnData.RegexValidation</a></li>
+	                    </ul>
+	                </div>
+	    
+	                <div class="tab-pane" id="modules">
+	                    <ul id="api-modules" class="nav nav-list">
+	                            <li><a href="../modules/column-data.html">column-data</a></li>
+	                            <li><a href="../modules/ember-column-data.html">ember-column-data</a></li>
+	                            <li><a href="../modules/ember-column-data-validation.html">ember-column-data-validation</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+                    Show:
+                    <label for="api-show-inherited" class="checkbox">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected" class="checkbox">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private" class="checkbox">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated" class="checkbox">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </form>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+                            <h1>addon/validations/ColumnDataValidation.js <small>File</small></h1>
+                        </div>
+                        
+                        <div class="file">
+                            <pre class="prettyprint linenums">
+                        import Ember from &quot;ember&quot;;
+                        import EmberObjectUtis from &quot;ember-object-utils&quot;;
+                        import EmptyValidation from &quot;./EmptyValidation&quot;;
+                        import RegexValidation from &quot;./RegexValidation&quot;;
+                        import CSVRegexValidation from &quot;./CSVRegexValidation&quot;;
+                        import CSVDuplicateValidation from &quot;./CSVDuplicateValidation&quot;;
+                        import DuplicateAcrossRecordsValidation from &quot;./DuplicateAcrossRecordsValidation&quot;;
+                        import NumberRangeValidation from &quot;./NumberRangeValidation&quot;;
+                        
+                        var ColumnDataValidationsMap = {
+                          0 : EmptyValidation,
+                          1 : RegexValidation,
+                          2 : CSVRegexValidation,
+                          3 : CSVDuplicateValidation,
+                          4 : DuplicateAcrossRecordsValidation,
+                          5 : NumberRangeValidation,
+                        };
+                        
+                        /**
+                         * Validation class that goes as &#x27;validation&#x27; on column data.
+                         *
+                         * @class EmberColumnData.ColumnDataValidation
+                         * @module ember-column-data
+                         * @submodule ember-column-data-validation
+                         */
+                        var ColumnDataValidation = Ember.Object.extend({
+                          init : function() {
+                            this._super();
+                            this.canBeEmpty();
+                          },
+                        
+                          /**
+                           * Array of validations to run. Passed as objects while creating.
+                           *
+                           * @property validations
+                           * @type Array
+                           */
+                          validations : EmberObjectUtis.hasMany(ColumnDataValidationsMap, &quot;type&quot;),
+                        
+                          /**
+                           * @property validate
+                           * @type Boolean
+                           * @private
+                           */
+                          validate : Ember.computed.notEmpty(&#x27;validations&#x27;),
+                        
+                          /**
+                           * Method to validate a value on record.
+                           *
+                           * @method validateValue
+                           * @param {any} value Value to validate.
+                           * @param {Class} record Record to validate on.
+                           * @param {Array} [validations] Optional override of the validations to run.
+                           * @returns {Array} Returns an array with 1st element as a boolean which says whether validations passed or not, 2nd element is the invalid message if it failed.
+                           */
+                          validateValue : function(value, record, validations) {
+                            var invalid = [false, &quot;&quot;];
+                            validations = validations || this.get(&quot;validations&quot;);
+                            for(var i = 0; i &lt; validations.length; i++) {
+                              var inv = validations[i].validateValue(value, record);
+                              if(inv[0]) {
+                                invalid = inv;
+                                break;
+                              }
+                            }
+                            return invalid;
+                          },
+                        
+                          canBeEmpty : Ember.observer(&quot;validations.@each&quot;, function() {
+                            if(this.get(&quot;validations&quot;) &amp;&amp; !Ember.A(this.get(&quot;validations&quot;).mapBy(&quot;type&quot;)).contains(0)) {
+                              this.set(&quot;mandatory&quot;, false);
+                              this.get(&quot;validations&quot;).forEach(function(item) {
+                                item.set(&#x27;canBeEmpty&#x27;, true);
+                              });
+                            }
+                            else {
+                              this.set(&quot;mandatory&quot;, true);
+                            }
+                          }),
+                        
+                          /**
+                           * Boolean to denote whether the property is mandatory or not.
+                           *
+                           * @property mandatory
+                           * @type Boolean
+                           */
+                          mandatory : false,
+                        });
+                        
+                        /**
+                         * Column Data Validation Types Map.
+                         *
+                         * @static
+                         * @property ColumnDataValidationsMap
+                         */
+                        ColumnDataValidation.ColumnDataValidationsMap = ColumnDataValidationsMap;
+                        
+                        export default ColumnDataValidation;
+                        
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>
