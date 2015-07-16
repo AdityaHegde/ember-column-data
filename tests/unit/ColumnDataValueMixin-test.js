@@ -1,6 +1,5 @@
 import Ember from "ember";
 import EmberColumnData from "ember-column-data";
-import EmberObjectUtils from "ember-object-utils";
 import { module, test } from "qunit";
 import startApp from "../helpers/start-app";
 

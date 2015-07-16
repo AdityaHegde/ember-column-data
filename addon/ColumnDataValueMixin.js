@@ -58,9 +58,9 @@ export default Ember.Mixin.create({
   },
 
   disableValidation : false,
-  validateValue : function(value) {
+  validateValue : function(value, validationOverride) {
     var columnData = this.get("columnData"), record = this.get("record"),
-        validation = columnData.get("validation");
+        validation = validationOverride || columnData.get("validation");
     if(validation && !this.get("disableValidation")) {
       var validVal = validation.validateValue(value, record);
       if(validVal[0]) {
