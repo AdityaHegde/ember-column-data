@@ -6,6 +6,7 @@
 import Ember from "ember";
 import ColumnDataGroup from "./ColumnDataGroup";
 import ColumnData from "./ColumnData";
+import ColumnDataGroupModuleMixin from "./ColumnDataGroupModuleMixin";
 import ColumnDataChangeCollectorMixin from "./ColumnDataChangeCollectorMixin";
 import ColumnDataValueMixin from "./ColumnDataValueMixin";
 import ColumnDataValidation from  "./validations/ColumnDataValidation";
@@ -16,6 +17,7 @@ window.EmberColumnData = EmberColumnData;
 
 EmberColumnData.ColumnDataGroup = ColumnDataGroup;
 EmberColumnData.ColumnData = ColumnData;
+EmberColumnData.ColumnDataGroupModuleMixin = ColumnDataGroupModuleMixin;
 EmberColumnData.ColumnDataChangeCollectorMixin = ColumnDataChangeCollectorMixin;
 EmberColumnData.ColumnDataValueMixin = ColumnDataValueMixin;
 EmberColumnData.ColumnDataValidation = ColumnDataValidation;
