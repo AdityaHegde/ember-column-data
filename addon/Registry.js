@@ -3,11 +3,11 @@ import Ember from "ember";
 export default Ember.Object.create({
   map : {},
 
-  store : function(name, parent, columnData) {
-    this.get("map")[parent+":"+name] = columnData;
+  store : function(name, columnData) {
+    this.get("map")[name] = columnData;
   },
 
-  retrieve : function(name, parent) {
-    return this.get("map")[parent+":"+name];
+  retrieve : function(name) {
+    return this.get("map")[name];
   },
 });

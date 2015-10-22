@@ -12,7 +12,7 @@ import EmberObjectUtils from "ember-object-utils";
 export default Ember.Object.extend({
   init : function () {
     this._super();
-    Registry.store(this.get("name"), "columnData", this);
+    Registry.store(this.get("name"), this);
   },
 
   /**
@@ -78,32 +78,36 @@ export default Ember.Object.extend({
   childColumnDataName : Ember.computed({
     set : function(key, value) {
       if(value) {
-        this.set("childColumnData", Registry.retrieve(value, "columnData"));
+        this.set("childColumnData", Registry.retrieve(value));
       }
       return value;
     },
   }),
 
   /**
-   * A nested child column data group.
+   * A nested array of column data.
    *
-   * @property childColumnDataGroup
-   * @type Class
+   * @property childrenColumnData
+   * @type Array
    * @private
    */
-  childColumnDataGroup : EmberObjectUtils.belongsTo("EmberColumnData.ColumnDataGroup"),
+  childrenColumnData : EmberObjectUtils.hasMany("EmberColumnData.ColumnData"),
 
   /**
-   * A name for the nesting of a column data group.
+   * An array of names for the nesting of column data.
    *
-   * @property childColumnDataGroupName
+   * @property childrenColumnDataName
    * @type String
    * @private
    */
-  childColumnDataGroupName : Ember.computed({
+  childrenColumnDataName : Ember.computed({
     set : function(key, value) {
-      if(value) {
-        this.set("childColumnDataGroup", Registry.retrieve(value, "columnDataGroup"));
+      if(value && Ember.type(value) === "array") {
+        var childrenColumnData = Ember.A();
+        value.forEach(function(columnDataName) {
+          childrenColumnData.pushObject(Registry.retrieve(columnDataName));
+        });
+        this.set("childrenColumnData", childrenColumnData);
       }
       return value;
     },
